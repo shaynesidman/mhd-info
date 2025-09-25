@@ -2,3 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+:root {
+    --background: #ffffff;
+    --text-color: #000000;
+    --alt: #efeee9;
+    /* --second-alt: ; */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #242424;
+        --text-color: #ffffff;
+        --alt: #101116;
+        /* --second-alt: ; */
+    }
+}
