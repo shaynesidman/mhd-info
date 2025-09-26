@@ -1,35 +1,83 @@
 ---
 import PageLayout from "../layouts/PageLayout.astro";
+import TS from "/public/icons/ts.svg";
+import Tailwind from "/public/icons/tailwind.svg";
+import React from "/public/icons/react.svg";
+import Nextjs from "/public/icons/next-js.svg";
+import D3 from "/public/icons/d3.svg";
+import Mapbox from "/public/icons/mapbox.svg";
+import NodeJS from "/public/icons/nodejs.svg";
+import Drizzle from "/public/icons/drizzle.svg";
+import Postgres from "/public/icons/postgresql.svg";
+import Clerk from "/public/icons/clerk.svg";
+import GitHub from "/public/icons/github.svg";
+import Vercel from "/public/icons/vercel.svg";
 ---
 
 <PageLayout>
-    <div class="h-full flex flex-col justify-center items-center gap-8">
-        <div>
+    <div class="h-full flex flex-col py-8 gap-12">
+        <div class="flex flex-col items-center gap-12">
             <h1 class="text-3xl font-bold">Frontend</h1>
-            <div>
-                <div>TypeScript</div>
-                <div>Tailwind</div>
-                <div>React</div>
-                <div>Next.js</div>
-                <div>D3.js</div>
-                <div>mapbox</div>
+            <div class="flex gap-6">
+                <div class="flex flex-col gap-2 items-center">
+                    <TS />
+                    TypeScript
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <Tailwind />
+                    Tailwind
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <React />
+                    React
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <Nextjs />
+                    Next.js
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <D3 />
+                    D3.js
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <Mapbox />
+                    mapbox
+                </div>
             </div>
         </div>
-        <div>
+        <div class="flex flex-col items-center gap-12">
             <h1 class="text-3xl font-bold">Backend</h1>
-            <div>
-                <div>Node.js</div>
-                <div>Drizzle</div>
-                <div>PostgreSQL</div>
-                <div>Clerk</div>
+            <div class="flex gap-6">
+                <div class="flex flex-col gap-2 items-center">
+                    <NodeJS />
+                    Node.js
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <Drizzle />
+                    Drizzle
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <Postgres />
+                    PostgreSQL
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <Clerk />
+                    Clerk
+                </div>
                 <div>Neon</div>
             </div>
         </div>
-        <div>
+        <div class="flex flex-col items-center gap-12">
             <h1 class="text-3xl font-bold">General</h1>
-            <div>
-                <div>GitHub (Projects)</div>
-                <div>Vercel</div>
+            <div class="flex gap-6">
+                <div class="flex flex-col gap-2 items-center">
+                    <GitHub />
+                    GitHub (Projects)
+                </div>
+                <div class="flex flex-col gap-2 items-center">
+                    <Vercel />
+                    Vercel
+                </div>
             </div>
         </div>
     </div>
