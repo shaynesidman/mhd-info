@@ -1,19 +1,23 @@
 ---
 import NavBarItem from "./NavBarItem.astro";
 
-const tabs = ["Spec", "b", "c", "d", "e"];
+const tabs = ["Spec", "Tech Stack", "c", "d", "e"];
+const links = ["spec", "tech-stack", "c", "d", "e"];
 ---
 
 <nav>
     <div class="flex flex-row justify-between items-center bg-[var(--alt)] px-4 mt-2 rounded-3xl">
         <!-- Logo -->
-        <div>
+        <a 
+            class="hover:cursor-pointer hover:bg-[var(--second-alt)] transition duration-300 py-1 px-2 rounded-md"
+            href="/"
+        >
             MHD
-        </div>
+        </a>
         <!-- Tabs -->
         <div class="flex flex-row gap-2 py-1">
-            {tabs.map(tab => (
-                <NavBarItem text={tab} href={tab.toLowerCase()} />
+            {tabs.map((tab, index) => (
+                <NavBarItem text={tab} href={links[index]} />
             ))}
         </div>
     </div>

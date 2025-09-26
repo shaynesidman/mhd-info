@@ -3,5 +3,55 @@ import PageLayout from "../layouts/PageLayout.astro";
 ---
 
 <PageLayout>
-    
+    <div class="h-full flex flex-col py-8 gap-12">
+        <div class="flex flex-col gap-6">
+            <h1 class="text-3xl font-bold">Project Overview</h1>
+            <div>
+                <h2 class="text-xl font-bold">What is Massachusetts History Day?</h2>
+                <p>A project group of the national non-profit organization called Massachusetts Historical Society that hosts annual history-related competition for high school students.</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold">Where is the Massachusetts Historical Society? Who is our point of contact for the project?</h2>
+                <p>MHS is located at 1154 Boylston St, Boston, MA 02215. Our point of contact is Paula Sampson, the Assistant Director for Massachusetts History Day.</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold">What is the problem our project intends to fix?</h2>
+                <p>The organization is currently using excel sheets to track all the data. As there are many fields of  the datasets, it's hard to analyze and interpret the data for future decision making.</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold">What's our solution/mission?</h2>
+                <p>Create a website for effective data visualization and analysis that would make interpretation of data trends easier.</p>
+            </div>
+        </div>
+        
+        <div class="flex flex-col gap-6">
+            <h1 class="text-3xl font-bold">Implementation Details</h1>
+            <div>
+                <h2 class="text-xl font-bold">Access Type</h2>
+                <p>For right now, the app will be admin-access only. However, there are plans with Paula to publicize some of the visualization, such as the heat map and some of the graphs.</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold">What can admins do?</h2>
+                <p>Admins will be able to upload and manage data, view trends of data over time, view the visualizations, and export data and visuals for reports (in the form of PDFs).</p>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold">Data Upload</h2>
+                <p>Admins will be able to upload data in the form of spreadsheets to the web app. There is a format for this data that can be found in the Google drive as well as attached to the original spec.</p> <!-- TO DO: link spreadsheet here -->
+            </div>
+            <div class="flex flex-col gap-4">
+                <h2 class="text-xl font-bold">Visualizations</h2>
+                <div class="flex flex-col gap-6">
+                    <div> <!-- heat map stuff in this div -->
+                        <h3 class="text-lg font-bold">Heat Map</h3>
+                        <p>The heat map will show the distribution of schools, teachers, and districts on a map of Massachusetts. It will be filterable by school, region, state, and year based on the scaling of the map. There will be a pop-up box associated with each region (displayed by clicking on the region) that will display associated information, including.</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="text-xl font-bold"></h2>
+                <p></p>
+            </div>
+
+        </div>
+    </div>
 </PageLayout>
