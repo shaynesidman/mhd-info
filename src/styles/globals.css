@@ -8,14 +8,14 @@
     --background: #ffffff;
     --text-color: #000000;
     --alt: #efeee9;
-    /* --second-alt: ; */
+    --second-alt: #e0ded7;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
         --background: #242424;
         --text-color: #ffffff;
-        --alt: #101116;
-        /* --second-alt: ; */
+        --alt: #2c2c2e;
+        --second-alt: #3c3c3e;
     }
 }
