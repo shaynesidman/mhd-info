@@ -19,3 +19,7 @@
         --second-alt: #3c3c3e;
     }
 }
+
+* {
+    font-family: "Overpass", sans-serif;
+}
