@@ -1,7 +1,10 @@
 ---
-const { text } = Astro.props;
+const { text, href } = Astro.props;
 ---
 
-<div class="hover:cursor-pointer hover:bg-[var(--second-alt)] transition duration-300 py-1 px-2 rounded-md">
+<a 
+    class="hover:cursor-pointer hover:bg-[var(--second-alt)] transition duration-300 py-1 px-2 rounded-md"
+    href={href}
+    >
     {text}
-</div>
+</a>
